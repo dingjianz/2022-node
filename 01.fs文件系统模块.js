@@ -34,6 +34,10 @@ fs.readFile('./file/1.txt', 'utf-8', function (err, dataStr) {
     参数2：必选参数，表示要写入的内容
     参数3：可选参数，表示以什么格式写入文件内容，默认是uft-8
     参数4：必选参数，文件写入完成后的回调函数
+    
+  注意：
+    fs.writeFile 方法只能用来创建文件，不能创建路径，意思是不能创建文件夹
+    重复调用fs.writeFile 写入同一个文件，新写入的内容会覆盖之前旧的内容
 */
 
 fs.writeFile('./file/2.sstxt', '我热爱学习！', 'utf-8', function(err) {

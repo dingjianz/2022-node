@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>时钟案例</title>
+  <style lang="css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .clock {
+      color: red;
+      width: 100px;
+      height: 100px;
+      margin: 200px auto;
+      background-color: orange;
+      color: #fff;
+      text-align: center;
+      line-height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="clock">
+    我是时钟
+  </div>
+  <script>
+    const $dom = document.querySelector('.clock')
+    $dom.addEventListener('mousemove',  function (e) {
+      e.target.style.color = 'red'
+    })
+    $dom.addEventListener('mouseleave',  function (e) {
+      e.target.style.color = '#fff'
+    })
+  </script>
+</body>
+
+</html>
