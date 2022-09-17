@@ -44,7 +44,7 @@
 
 // 让module.exports指向一个全新的对象
 
-exports.ausername = "jianding9"; // 实践：exports只能这样复制，直接 = {},无法生效
+exports.ausername = "jianding9"; // 实践：exports只能这样赋值，直接 = {},无法生效
 
 module.exports = {
   gender: '男',

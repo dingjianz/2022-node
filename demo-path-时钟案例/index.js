@@ -16,7 +16,7 @@ const resolveCss = (htmlStr) => {
 }
 
 // 方法2
-const resolveJs = (htmlStr) => {
+const resolveJs = (htmlStr) => { 
   const r1 = regScript.exec(htmlStr)
   if (Array.isArray(r1)) {
     const newJs = r1[0].replace('<script>', '').replace('</script>', '')
